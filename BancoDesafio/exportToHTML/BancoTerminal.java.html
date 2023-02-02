@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>BancoTerminal.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #a9b7c6;}
+.s1 { color: #cc7832;}
+.s2 { color: #6a8759;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+BancoTerminal.java</font>
+</center></td></tr></table>
+<pre>
+<span class="s1">import </span><span class="s0">java.util.Scanner</span><span class="s1">;</span>
+<span class="s1">public class </span><span class="s0">BancoTerminal { </span>
+    <span class="s0">Scanner info = </span><span class="s1">new </span><span class="s0">Scanner(System.in)</span><span class="s1">;</span>
+    <span class="s1">public int </span><span class="s0">numberAccount</span><span class="s1">;</span>
+    <span class="s1">public </span><span class="s0">String agency</span><span class="s1">;</span>
+    <span class="s1">public </span><span class="s0">String client</span><span class="s1">;</span>
+    <span class="s1">public float </span><span class="s0">money</span><span class="s1">;</span>
+
+    <span class="s1">public void </span><span class="s0">Sign_up(){</span>
+        <span class="s0">System.out.println(</span><span class="s2">&quot;Hello! to register you, we need some information's:&quot;</span><span class="s0">)</span><span class="s1">;</span>
+        <span class="s0">System.out.println(</span><span class="s2">&quot;firstly, we need your NAME:&quot;</span><span class="s0">)</span><span class="s1">;</span>
+        <span class="s0">client = info.next()</span><span class="s1">;</span>
+        <span class="s0">System.out.println(</span><span class="s2">&quot;Well done, &quot; </span><span class="s0">+ client + </span><span class="s2">&quot;, tell us your AGENCY&quot;</span><span class="s0">)</span><span class="s1">;</span>
+        <span class="s0">agency = info.next()</span><span class="s1">;</span>
+        <span class="s0">System.out.println(</span><span class="s2">&quot;Great, now enter your NUMBER-ACCOUNT&quot;</span><span class="s0">)</span><span class="s1">;</span>
+        <span class="s0">numberAccount = info.nextInt()</span><span class="s1">;</span>
+        <span class="s0">System.out.println(</span><span class="s2">&quot;How much MONEY have in your account&quot;</span><span class="s0">)</span><span class="s1">;</span>
+        <span class="s0">money = info.nextFloat()</span><span class="s1">;</span>
+        <span class="s0">System.out.println(</span><span class="s2">&quot;Congratulations, now see your information's</span><span class="s1">\n\n</span><span class="s2">&quot;</span><span class="s0">)</span><span class="s1">;</span>
+        <span class="s0">System.out.println(</span><span class="s2">&quot;ªº°ªº°ªº° INFO ªº°ªº°ªº°&quot;</span><span class="s0">)</span><span class="s1">;</span>
+        <span class="s0">System.out.println(</span><span class="s2">&quot;NAME: &quot; </span><span class="s0">+ client)</span><span class="s1">;</span>
+        <span class="s0">System.out.println(</span><span class="s2">&quot;NUMBER ACCOUNT: &quot; </span><span class="s0">+ numberAccount)</span><span class="s1">;</span>
+        <span class="s0">System.out.println(</span><span class="s2">&quot;AGENCY: &quot; </span><span class="s0">+ agency)</span><span class="s1">;</span>
+        <span class="s0">System.out.println(</span><span class="s2">&quot;MONEY: &quot; </span><span class="s0">+ money + </span><span class="s2">&quot;R$&quot;</span><span class="s0">)</span><span class="s1">;</span>
+    <span class="s0">}</span>
+<span class="s0">}</span>
+</pre>
+</body>
+</html>
